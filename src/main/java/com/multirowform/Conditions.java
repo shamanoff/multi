@@ -12,9 +12,9 @@ public class Conditions {
 
     public Conditions() {
         this.exerciseConditions = new ArrayList<>(4);
+    /*    this.exerciseConditions.add(new ExerciseCondition());
         this.exerciseConditions.add(new ExerciseCondition());
         this.exerciseConditions.add(new ExerciseCondition());
-        this.exerciseConditions.add(new ExerciseCondition());
-        this.exerciseConditions.add(new ExerciseCondition());
+        this.exerciseConditions.add(new ExerciseCondition());*/
     }
 }
