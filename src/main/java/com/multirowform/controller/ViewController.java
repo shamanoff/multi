@@ -1,7 +1,7 @@
 package com.multirowform.controller;
 
 
-import com.multirowform.Conditions;
+import com.multirowform.model.WrapperConditions;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PostMapping;
@@ -17,7 +17,7 @@ public class ViewController {
     public ModelAndView index() {
 
         ModelAndView mv = new ModelAndView("index");
-        mv.addObject("conditions", new Conditions());
+
         return mv;
     }
 
@@ -38,7 +38,7 @@ public class ViewController {
     }
 
     @PostMapping("/save")
-    public View saveOrUpdate(Conditions conditions) {
+    public View saveOrUpdate(WrapperConditions wrapperConditions) {
         View view = new RedirectView("/index");
 
         return view;
