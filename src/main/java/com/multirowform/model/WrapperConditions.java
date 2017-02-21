@@ -7,13 +7,11 @@ public class WrapperConditions {
 
     private List<ExerciseCondition> exerciseConditions;
 
-    public List<ExerciseCondition> getEx() {
-        return this.exerciseConditions;
-    }
-
-
-
     public WrapperConditions() {
         exerciseConditions = new ArrayList<>();
+    }
+
+    public List<ExerciseCondition> getEx() {
+        return this.exerciseConditions;
     }
 }

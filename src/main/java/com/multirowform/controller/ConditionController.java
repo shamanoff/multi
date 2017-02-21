@@ -10,9 +10,7 @@ import org.springframework.web.bind.annotation.RequestMethod;
 import java.util.ArrayList;
 import java.util.List;
 
-/**
- * Created by kudelin on 2/20/17.
- */
+
 
 @Controller
 public class ConditionController {
@@ -21,8 +19,7 @@ public class ConditionController {
 
     @RequestMapping(value = "/conditionsInput", method = RequestMethod.POST)
     public String conditionsInput(@ModelAttribute WrapperConditions conditions) {
-//        System.out.println("customers " + customers.getCustomers() + " " + customers);
-//        System.out.println(conditions.getExerciseConditions());
+
         myList = conditions.getEx();
 
         myList.stream()
